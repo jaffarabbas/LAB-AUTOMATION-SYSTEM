@@ -43,13 +43,13 @@ if(isset($_POST['submit_reply'])){
     $mail->isSMTP();                                            // Send using SMTP
     $mail->Host       = 'smtp.gmail.com';                    // Set the SMTP server to send through
     $mail->SMTPAuth   = true;                                   // Enable SMTP authentication
-    $mail->Username   = 'jzsoftwaresolution@gmail.com';                     // SMTP username
-    $mail->Password   = 'JAFFARempire';                               // SMTP password
+    $mail->Username   = '';                     // SMTP username
+    $mail->Password   = '';                               // SMTP password
     $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;         // Enable TLS encryption; `PHPMailer::ENCRYPTION_SMTPS` encouraged
     $mail->Port       = 587;                                    // TCP port to connect to, use 465 for `PHPMailer::ENCRYPTION_SMTPS` above
 
     //Recipients
-    $mail->setFrom('jzsoftwaresolution@gmail.com', 'JAFFAR');
+    $mail->setFrom('', '');
     $mail->addAddress($email);     // Add a recipient
     // // Attachments
     // $mail->addAttachment('/var/tmp/file.tar.gz');         // Add attachments
