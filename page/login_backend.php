@@ -30,10 +30,7 @@ if (isset($_POST['username']) && isset($_POST['password'])) {
 			$row = mysqli_fetch_assoc($result);
             if ($row['username'] === $uname && $row['password'] === $pass) {
             	$_SESSION['username'] = $row['username'];
-				$_SESSION['password'] = $row['password'];
-				$_SESSION['email_admin'] = $row['email'];
-				$_SESSION['number_admin'] = $row['number'];
-				$_SESSION['profile_admin'] = $row['profile'];
+            	//$_SESSION['name'] = $row['name'];
             	$_SESSION['id'] = $row['id'];
             	header("Location: admin_dashborad.php");
 		        exit();

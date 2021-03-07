@@ -29,9 +29,6 @@ error_reporting(E_ERROR | E_PARSE);
                               <th scope="col">Product Type</th>
                               <th scope="col">Resgestration date</th>
                               <th scope="col">Update date</th>
-                              <th scope="col">Customer Name</th>
-                              <th scope="col">Customer Address</th>
-                              <th scope="col">Customer Number</th>
                               <th scope="col">COMPILATION</th>
                               <th scope="col">TEST STATUS</th>
                               <th scope="col">TEST</th>
@@ -74,12 +71,10 @@ error_reporting(E_ERROR | E_PARSE);
                                 <td>" . $row['name_product_type'] . "</td>
                                 <td>" . $row['genrate_time'] . "</td>
                                 <td>" . $row['upgrade_time'] . "</td>
-                                <td>" . $row['customer_name'] . "</td>
-                                <td>" . $row['customer_address'] . "</td>
-                                <td>" . $row['customer_number'] . "</td>
                                 <td>" . tick($row['compilation']) . "</td>
                                 <td>" . tick($row['test_status']) . "</td>
-                                <td><a class='btn btn-primary' href='testing_page.php?TEST=".$row['id']."' id=" . $id . "  name='submit' />TEST</a></td>";                       
+                                <td><a class='btn btn-primary' href='testing_page.php?TEST=".$row['id']."' id=" . $id . "  name='submit' />TEST</a></td>";
+                          
                                 $_SESSION['status'] = $row['test_status'];    
                                 $_SESSION['compilation'] = $row['compilation'];
                       

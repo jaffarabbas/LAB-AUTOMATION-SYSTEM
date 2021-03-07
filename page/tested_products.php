@@ -2,20 +2,6 @@
 session_start(); 
 require_once('db_connection.php');  
 error_reporting(E_ERROR | E_PARSE);
-
-if (isset($_GET['vendors'])) {
-    $id = $_GET['vendors'];
-    $update = true;
-    $record = mysqli_query($conn, "SELECT * FROM `tested_product` WHERE id=$id");
-
-    if (count($record) == 1 ) {
-        $n = mysqli_fetch_array($record);
-        if($n[''])
-    }
-}
-
-
-
 ?>
                   <?php  include "header.php"?>
                     <!-- End of Topbar -->
@@ -85,8 +71,7 @@ if (isset($_GET['vendors'])) {
                                             <td>".$row['update_date']."</td>
                                             <td>".$row['compilation']."</td>
                                             <td>".tick($row['test_status'])."</td>
-                                            <td><form method='post' action='tested_product.php?vendors=".$row['id']."'><input class='btn btn-primary' href='testing_page.php' id=".$row['id']." type='submit' name='test_view' value='VENDOR'/></form></td>";     
-                                            
+                                            <td><form method='post' action='testing_page.php'><input class='btn btn-primary' href='testing_page.php' id=".$row['id']." type='submit' name='test_view' value='VENDOR'/></form></td>";     
                                             $_SESSION['test_product_generate_id']=$row['genrate_id'];
                                             $_SESSION['test_product_name']=$row['name_product'];
                                             $_SESSION['test_product_type']=$row['name_product_type'];                                    

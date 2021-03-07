@@ -22,17 +22,15 @@ error_reporting(E_ERROR | E_PARSE);
                          <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
                           <thead>
                             <tr>
-                            <th scope="col">Id</th>
+                              <th scope="col">Id</th>
                               <th scope="col">Generated Id</th>
                               <th scope="col">Product Name</th>
                               <th scope="col">Product Type</th>
                               <th scope="col">Resgestration date</th>
                               <th scope="col">Update date</th>
-                              <th scope="col">Customer Name</th>
-                              <th scope="col">Customer Address</th>
-                              <th scope="col">Customer Number</th>
                               <th scope="col">COMPILATION</th>
                               <th scope="col">TEST STATUS</th>
+                            
                             </tr>
                           </thead>
                           <tbody>
@@ -72,9 +70,6 @@ error_reporting(E_ERROR | E_PARSE);
                                 <td>" . $row['name_product_type'] . "</td>
                                 <td>" . $row['genrate_time'] . "</td>
                                 <td>" . $row['upgrade_time'] . "</td>
-                                <td>" . $row['customer_name'] . "</td>
-                                <td>" . $row['customer_address'] . "</td>
-                                <td>" . $row['customer_number'] . "</td>
                                 <td>" . tick($row['compilation']) . "</td>
                                 <td>" . tick($row['test_status']) . "</td>";
                              

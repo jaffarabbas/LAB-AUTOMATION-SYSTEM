@@ -81,4 +81,3 @@ error_reporting(E_ERROR | E_PARSE);
                              </div>
  
                              <?php  include "user_footer.php"?>
-WWWWWWWW

@@ -38,7 +38,7 @@ require_once('db_connection.php');
     <div class="lg:w-2/5 inline-flex lg:justify-end ml-5 lg:ml-0">
     <a class="mr-5 hover:text-gray-900" href="product_display.php">CART</a>
       <a class="mr-5 hover:text-gray-900" href="login.php">Login</a>
-      <a class="mr-5 hover:text-gray-900" href="register_customer.php">Register</a>
+      <a class="mr-5 hover:text-gray-900">Regester</a>
     </div>
   </div>
 </header>

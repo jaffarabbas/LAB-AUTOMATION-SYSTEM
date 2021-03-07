@@ -52,7 +52,7 @@ require_once('db_connection.php');
 </style>
     </head>
 
-    <body  class="bg-gradient-primary">
+    <body id="page-top">
 
 
 
@@ -115,6 +115,9 @@ require_once('db_connection.php');
                                         <div class="text-center">
                                             <a class="small" href="forgot-password.html">Forgot Password?</a>
                                         </div>
+                                        <div class="text-center">
+                                            <a class="small" href="register.html">Create an Account!</a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -157,6 +160,9 @@ require_once('db_connection.php');
                                         <hr>
                                         <div class="text-center">
                                             <a class="small" href="forgot-password.html">Forgot Password?</a>
+                                        </div>
+                                        <div class="text-center">
+                                            <a class="small" href="register.html">Create an Account!</a>
                                         </div>
                                     </div>
                                 </div>
@@ -202,7 +208,7 @@ require_once('db_connection.php');
                                             <a class="small" href="forgot-password.html">Forgot Password?</a>
                                         </div>
                                         <div class="text-center">
-                                            <a class="small" href="register_customer.php">Create an Account!</a>
+                                            <a class="small" href="register.html">Create an Account!</a>
                                         </div>
                                     </div>
                                 </div>

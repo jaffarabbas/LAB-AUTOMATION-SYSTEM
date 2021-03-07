@@ -90,33 +90,22 @@ if (isset($_SESSION['id']) && isset($_SESSION['username'])) {
                     </a>
                 </li>
 
-                <li class="nav-item">
-                    <a class="nav-link" href="admin_contact_display.php">
-                        <i class="fas fa-fw fa-wrench"></i>
-                        <span>MESSAGES</span>
-                    </a>
-                </li>
+                <!-- Divider -->
+                <!-- <hr class="sidebar-divider"> -->
 
-                <li class="nav-item">
-                    <a class="nav-link" href="customer_list_for_admin.php">
-                        <i class="fas fa-fw fa-wrench"></i>
-                        <span>CUSTOMERS LIST</span>
-                    </a>
-                </li>
+                <!-- Heading -->
+                <!-- <div class="sidebar-heading">
+                    TEST 
+                </div> -->
 
-                <li class="nav-item">
-                    <a class="nav-link" href="add_user_for_admin.php">
-                        <i class="fas fa-fw fa-wrench"></i>
-                        <span>ADD USERS</span>
+                <!-- Nav Item - Pages Collapse Menu -->
+                <!-- <li class="nav-item">
+                    <a class="nav-link" href="#">
+                        <i class="fas fa-fw fa-folder"></i>
+                        <span>TESTING PRODUCTS<br>APROVED BY USER</span>
                     </a>
-                </li>
-
-                <li class="nav-item">
-                    <a class="nav-link" href="user_list_for_admin.php">
-                        <i class="fas fa-fw fa-wrench"></i>
-                        <span>USER LIST</span>
-                    </a>
-                </li>
+                </li> -->
+                <!-- Divider -->
                 <hr class="sidebar-divider d-none d-md-block">
 
                 <!-- Sidebar Toggler (Sidebar) -->

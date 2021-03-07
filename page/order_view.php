@@ -1,11 +1,6 @@
 <?php
 session_start(); 
 require_once('db_connection.php');  
-
-echo $_SESSION['customer_quantity'];
-echo $_SESSION['customer_address'];
-echo $_SESSION['customer_number'];
-
 error_reporting(E_ERROR | E_PARSE);
 function Unique_Id_genetrater(){
   $n=12; 
@@ -25,13 +20,8 @@ if($_SERVER['REQUEST_METHOD'] == 'POST'){
 $test_genrate_id = Unique_Id_genetrater();
 $test_product = $_SESSION['test_product'];
 $test_product_type = $_SESSION['test_product_type'];
-
-$customer_quantity =  $_SESSION['customer_quantity'];
-$customer_address =$_SESSION['customer_address'];
-$customer_number = $_SESSION['customer_number'];
-
-    $sql = "INSERT INTO `test_product` (`id`, `genrate_id`, `name_product`, `name_product_type`, `genrate_time`, `customer_quantity`,`customer_address`,`customer_number`,`compilation`,`test_status`)
-    VALUES (NULL, '$test_genrate_id', '$test_product', '$test_product_type ', current_timestamp(),'$customer_quantity','$customer_address','$customer_number', '0','0');"; 
+    $sql = "INSERT INTO `test_product` (`id`, `genrate_id`, `name_product`, `name_product_type`, `genrate_time`, `compilation`,`test_status`)
+    VALUES (NULL, '$test_genrate_id', '$test_product', '$test_product_type ', current_timestamp(), '0','0');"; 
     $result = mysqli_query($conn,$sql); 
 }
 ?>
@@ -70,7 +60,7 @@ $customer_number = $_SESSION['customer_number'];
                         <?php  
                             error_reporting(0);
                         
-                            $sql = "SELECT * FROM `order_saver` join `product` join `products_types` on `order_saver`.`product`=`product`.`id` and `order_saver`.`product_type`=`products_types`.`id`";
+                            $sql = "SELECT * FROM `order_saver` join product join products_types on order_saver.product=product.id and order_saver.product_type=products_types.id";
                             $result = mysqli_query($conn,$sql) ;
                             $id = 0;
 
@@ -82,10 +72,6 @@ $customer_number = $_SESSION['customer_number'];
                                 $_SESSION['check_id'] = $row['id'];
                                 $_SESSION['test_product']=$row['name'];
                                 $_SESSION['test_product_type'] = $row['typename'];
-                                $_SESSION['customer_quantity'] = $row['quantity'];
-                                $_SESSION['customer_address'] = $row['address'];
-                                $_SESSION['customer_number'] = $row['number'];
-
                                 echo "<tr>
                                 <th scope='row'>".$id."</th>
                                 <td>".$row['name']."</td>
@@ -100,6 +86,19 @@ $customer_number = $_SESSION['customer_number'];
                                    </div>
                                  </div>
                           </div>
+                    
+
+
+                      
+                        <!-- Footer -->
+                        <footer class="sticky-footer bg-white">
+                            <div class="container my-auto">
+                                <div class="copyright text-center my-auto">
+                                    <span>Copyright &copy; Your Website 2020</span>
+                                </div>
+                            </div>
+                        </footer>
+                        <!-- End of Footer -->
 
                     </div>
                     <!-- End of Content Wrapper -->
@@ -133,3 +132,11 @@ $customer_number = $_SESSION['customer_number'];
 
                 <?php  include "footer.php"?>
 
+</body>
+</html>
+<!-- <?php 
+// }else{
+//      header("Location: login.php");
+//      exit();
+// }
+ ?> -->                          

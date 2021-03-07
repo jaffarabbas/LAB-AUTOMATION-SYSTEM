@@ -118,7 +118,7 @@ if (isset($_POST['product_selection']) && isset($_POST['product_Type_selection']
   </div>
 </nav>  
 </section>
-
+<section class="caro" id="header_main">
 <section class="text-gray-700 body-font">
   <div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
     <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0">
@@ -128,14 +128,14 @@ if (isset($_POST['product_selection']) && isset($_POST['product_Type_selection']
       <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">IMAJ SOLUTION
         <br class="hidden lg:inline-block">ALL ELCTRICAL HOLDS 
       </h1>
-      <p class="mb-8 leading-relaxed">imaj solution all kinds of alectrical holds</p>
+      <p class="mb-8 leading-relaxed">Copper mug try-hard pitchfork pour-over freegan heirloom neutra air plant cold-pressed tacos poke beard tote bag. Heirloom echo park mlkshk tote bag selvage hot chicken authentic tumeric truffaut hexagon try-hard chambray.</p>
       <div class="flex justify-center">
-        <button class="inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">CART</button>
+        <button class="inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">RESGESTER</button>
       </div>
     </div>
   </div>
 </section>
-
+</section>
 
 <section class="text-gray-700 body-font" id="about">
   <div class="container px-5 py-24 mx-auto flex flex-col">
@@ -398,15 +398,11 @@ if (isset($_POST['product_selection']) && isset($_POST['product_Type_selection']
   <div class="container px-5 py-24 mx-auto flex">
     <div class="lg:w-1/3 md:w-1/2 bg-white rounded-lg p-8 flex flex-col md:ml-auto w-full mt-10 md:mt-0 relative z-10">
       <h2 class="text-gray-900 text-lg mb-1 font-medium title-font">Feedback</h2>
-      <p class="leading-relaxed mb-5 text-gray-600">Give your precious feedback</p>
-      <form method="post" action="contact_backend.php">
-      <?php if (isset($_GET['error'])) { ?>
-     		<p class="text-danger"><?php echo $_GET['error']; ?></p>
-     	<?php } ?>
-      <input class="bg-white rounded border border-gray-400 focus:outline-none focus:border-indigo-500 text-base px-4 py-2 mb-4" placeholder="Email" type="email" name="email">
-      <textarea class="bg-white rounded border border-gray-400 focus:outline-none h-40  focus:border-indigo-500 text-base px-4 py-2 mb-4 resize-none" placeholder="Message" name="message"></textarea>
-      <input class="text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg" type="submit" name="contact_submit" value="Feedback">
-      </form>
+      <p class="leading-relaxed mb-5 text-gray-600">Post-ironic portland shabby chic echo park, banjo fashion axe</p>
+      <input class="bg-white rounded border border-gray-400 focus:outline-none focus:border-indigo-500 text-base px-4 py-2 mb-4" placeholder="Email" type="email">
+      <textarea class="bg-white rounded border border-gray-400 focus:outline-none h-32 focus:border-indigo-500 text-base px-4 py-2 mb-4 resize-none" placeholder="Message"></textarea>
+      <button class="text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">Button</button>
+      <p class="text-xs text-gray-500 mt-3">Chicharrones blog helvetica normcore iceland tousled brook viral artisan.</p>
     </div>
   </div>
 </section>

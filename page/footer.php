@@ -25,7 +25,7 @@ if (isset($_SESSION['id']) && isset($_SESSION['username'])) {
     <footer class="sticky-footer bg-white">
                             <div class="container my-auto">
                                 <div class="copyright text-center my-auto">
-                                   <span> <a href="jzsoftwaresolution@gmail.com">Copyright &copy; jzsoftwaresolution@gmail.com</a></span>
+                                    <span>Copyright &copy; Your Website 2020</span>
                                 </div>
                             </div>
                         </footer>
