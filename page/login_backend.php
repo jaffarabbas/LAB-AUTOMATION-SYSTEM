@@ -34,6 +34,7 @@ if (isset($_POST['username']) && isset($_POST['password'])) {
             	$_SESSION['id'] = $row['id'];
             	header("Location: admin_dashborad.php");
 		        exit();
+				
             }else{
 				header("Location: login.php?error=Incorect User name or password");
 		        exit();
