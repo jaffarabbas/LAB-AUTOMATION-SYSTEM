@@ -1,6 +1,6 @@
 <?php 
-require_once('db_connection.php');  
-if (isset($_SESSION['id']) && isset($_SESSION['username2'])) {
+// require_once('db_connection.php');  
+// if (isset($_SESSION['id']) && isset($_SESSION['username2'])) {
 ?>
 <!DOCTYPE html>
     <html lang="en">
@@ -64,8 +64,8 @@ if (isset($_SESSION['id']) && isset($_SESSION['username2'])) {
 </body>
 </html>
 <?php 
-}else{
-     header("Location: login.php");
-     exit();
-}
+// }else{
+//      header("Location: login.php");
+//      exit();
+// }
  ?> 
