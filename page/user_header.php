@@ -1,7 +1,7 @@
 <?php 
-session_start(); 
-require_once('db_connection.php');  
-if (isset($_SESSION['id']) && isset($_SESSION['username2'])) {
+// session_start(); 
+// require_once('db_connection.php');  
+// if (isset($_SESSION['id']) && isset($_SESSION['username2'])) {
 ?>
 
 <!DOCTYPE html>
@@ -310,8 +310,8 @@ if (isset($_SESSION['id']) && isset($_SESSION['username2'])) {
 </body>
 </html>
 <?php 
-}else{
-     header("Location: login.php");
-     exit();
-}
+// }else{
+//      header("Location: login.php");
+//      exit();
+// }
  ?> 
